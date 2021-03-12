@@ -48,13 +48,21 @@
 
     var somma = numUtente + numCpu;
 
-    if(somma % 2 == 0 && paliDispari == 'pari'){
+    if (paliDispari !== 'pari' && paliDispari !== 'dispari') {
+
+      console.log('inserisci dei valori validi');
+
+    } else if (numUtente > 5) {
+
+      console.log('inserisci dei valori validi');
+
+    } else if (somma % 2 !== 0 && paliDispari == 'dispari') {
 
       console.log('Hai scelto ' + paliDispari);
       console.log('Tu hai scelto ' + numUtente + ' il pc ha scelto ' + numCpu);
       console.log('il risultato è ' + somma + ' Hai vinto!');
 
-    } else if (somma % 2 !== 0 && paliDispari == 'dispari') {
+    } else if(somma % 2 == 0 && paliDispari == 'pari'){
 
       console.log('Hai scelto ' + paliDispari);
       console.log('Tu hai scelto ' + numUtente + ' il pc ha scelto ' + numCpu);
